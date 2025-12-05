@@ -11,64 +11,53 @@ Se divide en:
 ---
 
 # 🔹 1. Lista de Dataframes (en orden de pipeline)
-
-## ** Dataset original**
-
-### `Kaggle - Billboard Hot 100 dataset.csv`
-
-Dataset original (1958–2021) descargado desde Kaggle.
-link: https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs?resource=download
-Contiene posiciones semanales Billboard Hot 100.
-
 ---
-
-## ** Fase 1 — Limpieza inicial**
-
-### `billboard_weekly_ready.csv`
-
+## **`Kaggle - Billboard Hot 100 dataset.csv`**
+Dataset original (1958–2021) descargado desde Kaggle.  
+Contiene posiciones semanales del Billboard Hot 100.
+- input fase 1
+---
+## **`billboard_weekly_ready.csv`**
 Dataset semanal limpio preparado para integrarse con Spotify API.
+- output fase 1
+- input fase 2
 
-### `billboard_top100_annual.csv`
 
-Dataset auxiliar con el ranking anual calculado.
+## **`billboard_top100_annual.csv`**
+Dataset auxiliar con el ranking anual calculado.  
 NO se usa en fases posteriores.
+- output fase 1
 
 ---
+## **`spotify_weekly_integrated.csv`**
+Dataset integrado con metadatos de Spotify (géneros, artista, duración, álbum, popularidad).
+- output fase 2
+- input fase 3
 
-## ** Fase 2 — Integración Spotify API**
-
-### `spotify_weekly_integrated.csv`
-
-Dataset integrado con metadatos de Spotify ( géneros, duración...).
-
-### `spotify_weekly_errors.csv`
-
-Archivo de errores API.
+## **`spotify_weekly_errors.csv`**
+Archivo de errores API.  
 Normalmente vacío.
+- output fase 2
 
 ---
+## **`mismatch_artist_para_api.csv`**
+Registros descartados (~15%) por mismatch entre Billboard y Spotify.  
+No continúa en la pipeline. 
+- output fase 3
 
-## ** Fase 3 — Limpieza avanzada y dataset final**
-
-### `mismatch_artist_para_api.csv`
-
-Registros descartados (~15%) por mismatch entre Billboard y Spotify.
-No continúa en la pipeline.
-!!!! Advertencia: A partir de esta fase, todos los dataframes contienen solo el 85% de los registros originales.
-Los datos descartados no se reintegran en ninguna etapa posterior, de momento.
-
-### `spotify_clean_full.csv`
-
-Dataset completo post-limpieza, con columnas derivadas, género musical y era tecnológica.
+**Advertencia:** A partir de este punto, todos los dataframes contienen solo ~85% de los registros originales.  
+Los datos descartados NO estan reintegrados de momento.
 
 ---
-
-## ** Fase 4 — Dataset para análisis estadístico**
-
-### `spotify_clean_for_anova.csv`
-
-Subset optimizado para ANOVA y análisis estadísticos. Contiene solo 8 columnas clave.
-
+## **`spotify_clean_full.csv`**
+Dataset completo post-limpieza, con columnas derivadas, género musical y era tecnológica.  
+- output fase 3
+- input fase 4
+---
+## **`spotify_clean_for_anova.csv`**
+Subset optimizado para ANOVA y análisis estadísticos.  
+- output fase 3
+- input fase 4
 ---
 
 # 🔹 2. Categorías de columnas
