@@ -17,7 +17,7 @@ El foco principal del análisis se centra en:
 - la distribución de géneros musicales,
 - y su comparación entre distintas **eras tecnológicas**.
 
-<<<
+
 
 Link to dataset original:  
 https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs?resource=download
@@ -39,7 +39,7 @@ Explorar cómo han variado la **duración**, los **géneros musicales**, y varia
    - efecto de las variables Popularity y Explicit sobre la duración.
 3. **Analizar la evolución y co-ocurrencia** de los géneros musicales mediante heatmaps y agregaciones.
 4. **Detectar patrones históricos (en general)** que describan cómo cambia la música popular entre 1958 y 2021.
-<<<
+
 
 ---
  
@@ -47,7 +47,7 @@ Explorar cómo han variado la **duración**, los **géneros musicales**, y varia
 
 La ejecución completa del proyecto se realiza siguiendo los notebooks en orden (Fase 1 → Fase 4), tal como se describe en la Pipeline.  
 Cada fase genera o utiliza sus respectivos archivos CSV, disponibles en la carpeta `/data/`.
-<<<
+
 
 ---
 
@@ -166,7 +166,7 @@ Aunque no implica causalidad, se observan patrones consistentes entre formatos d
 
 ### **Sobre la integración de datos**  
 La unificación Billboard + Spotify permite construir un dataset histórico robusto, adecuado para análisis descriptivos e inferenciales sobre tendencias de la música popular.
-<<<
+
 
 ---
 
@@ -175,7 +175,7 @@ La unificación Billboard + Spotify permite construir un dataset histórico robu
 La presentación completa del proyecto está disponible en la carpeta `/slides/` o online en Canva:
 
 https://www.canva.com/design/DAG5hj7Qr9w/igb6U4MpRcMc99cmMIfN0A/view
-<<<
+
 
 
 ---
