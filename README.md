@@ -16,6 +16,7 @@ El foco principal del análisis se centra en:
 - la variación histórica de la duración de las canciones,
 - la distribución de géneros musicales,
 - y su comparación entre distintas **eras tecnológicas**.
+
 <<<
 
 Link to dataset original:  
