@@ -155,17 +155,14 @@ Solo visualizaciones (no se generan nuevos CSV)
 
 # 6. Conclusiones
 
+### **Sobre la integración de datos**  
+La unificación Billboard + Spotify permite construir un dataset histórico robusto, adecuado para análisis descriptivos e inferenciales sobre tendencias de la música popular.
+
 ### **Sobre la duración de las canciones**  
 El análisis ANOVA confirma diferencias estadísticas significativas en la duración media entre eras tecnológicas. Tukey HSD identificó qué todas las eras difieren entre sí.
 
 ### **Sobre los géneros musicales**  
 Los heatmaps muestran cambios claros en la presencia relativa de los géneros a lo largo de décadas, destacando transiciones estilísticas visibles en el tiempo. el análisis ANOVA confirma diferencias estadísticas significativas en la duración media entre los varios generos musicales. Tukey HSD identificó qué 55 combinaciónes de generos sobre 153 muestran diferencias entre ellos.
-
-### **Sobre la relación entre eras tecnológicas y características musicales**  
-Aunque no implica causalidad, se observan patrones consistentes entre formatos de consumo y características musicales predominantes.
-
-### **Sobre la integración de datos**  
-La unificación Billboard + Spotify permite construir un dataset histórico robusto, adecuado para análisis descriptivos e inferenciales sobre tendencias de la música popular.
 
 
 ---
